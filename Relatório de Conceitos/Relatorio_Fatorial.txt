@@ -1,0 +1,28 @@
+Relatório - Fatorial Recursivo
+
+Implementação: fatorial(n)
+
+Explicação do funcionamento para n = 4:
+
+1. Caso Base
+O caso base é definido quando n == 0 ou n == 1. Nessas situações, a função retorna 1 diretamente, 
+interrompendo o processo recursivo e evitando que ele se torne infinito.
+
+2. Passo Recursivo
+A cada chamada, o problema F(n) é reduzido ao problema F(n−1), ou seja, o cálculo de fatorial(n) 
+depende do cálculo de fatorial(n−1). Isso significa que a função se chama novamente com um valor 
+menor de n até chegar ao caso base.
+
+3. Rastreamento Manual (n=4)
+fatorial(4) = 4 * fatorial(3)
+fatorial(3) = 3 * fatorial(2)
+fatorial(2) = 2 * fatorial(1)
+fatorial(1) = 1 (caso base)
+
+Resolvendo de trás para frente:
+fatorial(1) = 1
+fatorial(2) = 2 * 1 = 2
+fatorial(3) = 3 * 2 = 6
+fatorial(4) = 4 * 6 = 24
+
+Resultado final: 24

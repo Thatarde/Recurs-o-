@@ -1,0 +1,21 @@
+Relatório - Busca Binária Recursiva
+
+Implementação: busca_binaria(lista, valor, inicio, fim)
+
+1. Importância do Array Ordenado
+A busca binária só funciona corretamente em listas ordenadas, pois a recursão depende da comparação 
+com o elemento do meio para decidir se a busca deve continuar na metade esquerda ou direita da lista.
+
+2. Caso Recursivo
+O caso recursivo ocorre quando o valor ainda não foi encontrado. 
+A cada chamada, o problema é reduzido pela metade, cortando parte da lista com base na comparação.
+
+Exemplo:
+Se valor < lista[meio], busca é chamada novamente na metade esquerda.
+Se valor > lista[meio], busca é chamada novamente na metade direita.
+
+3. Casos Base
+- Caso Base de Sucesso: lista[meio] == valor → retorna a posição do valor encontrado.
+- Caso Base de Falha: inicio > fim → indica que o valor não está na lista.
+
+Assim, a função recursiva reduz progressivamente o problema até que um dos casos base seja atingido.

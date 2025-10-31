@@ -1,0 +1,22 @@
+Relatório - Torres de Hanói Recursivo
+
+Implementação: hanoi(n, origem, destino, auxiliar)
+
+1. Lógica dos Três Passos
+O algoritmo segue três passos principais para mover N discos de um pino de origem para um pino de destino:
+  1. Mover N−1 discos do pino de origem para o pino auxiliar.
+  2. Mover o disco N (maior) diretamente para o pino de destino.
+  3. Mover os N−1 discos do pino auxiliar para o pino de destino.
+
+Esses três passos são aplicados recursivamente até que reste apenas um disco.
+
+2. Caso Base
+O caso base ocorre quando N == 1. Nesse ponto, o algoritmo realiza o movimento simples de um único disco 
+da origem para o destino, encerrando a recursão e permitindo que ela comece a se desenrolar.
+
+Exemplo (N=3):
+- Mover 2 discos de A para B.
+- Mover disco 3 de A para C.
+- Mover 2 discos de B para C.
+
+O algoritmo imprime a sequência de movimentos necessária para resolver o problema.
