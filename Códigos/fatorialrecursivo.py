@@ -19,5 +19,5 @@ def fatorial(n): # Definição da função
   """
   return fat # Após todo o calculo multiplicação de trás para frente, retorna o valor do fatorial
 
-print(fatorial(4)) # Fatorial a ser calculado (input)
-
+fatorial(4) # Fatorial a ser calculado (input)
+print(fatorial(4))
